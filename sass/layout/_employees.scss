@@ -1,0 +1,111 @@
+.comand-bg-color {
+    background-color: var(--comand-color);
+}
+
+.team-location {
+    display: block;
+}
+
+
+.person-location {
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.person-location:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.pesron-bg-color {
+    background-color: var(--hero-color-font);
+}
+
+.person-img {
+    display: block;
+    padding-bottom: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.name-person {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+}
+
+.paragraph-text {
+    color: var(--paragraph-color-font);
+}
+
+.description-profeshion {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 16px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .person-img {
+        width: 450px;
+        height: 460px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team-location {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .person-location {
+        flex-basis: calc((100% - 30px*1) / 2);
+    }
+
+    .person-location:not(:nth-child(2n+1)) {
+        margin-left: 30px;
+    }
+
+    .person-location:nth-child(n + 1) {
+        margin-bottom: 0;
+    }
+
+    .person-img {
+        width: 354px;
+        height: 374px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .person-location {
+        flex-basis: calc((100% - 30px * 3) / 4);
+    }
+
+    .person-location:nth-child(-n + 4) {
+        margin-top: 50px;
+    }
+
+    .person-location:not(:nth-child(4n+1)) {
+        margin-left: 30px;
+    }
+
+    .person-img {
+        width: 270px;
+        height: 260px;
+    }
+}

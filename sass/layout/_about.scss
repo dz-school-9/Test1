@@ -1,0 +1,131 @@
+.section-about {
+    padding-top: 60px;
+    background-color: var(--hero-color-font);
+}
+
+.section-about__list {
+    display: block;
+}
+
+
+.section-about__item {
+    max-width: 450px;
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    &:last-child {
+        padding-bottom: 60px;
+    }
+}
+
+.section-about__icon {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 450px;
+    height: 120px;
+    background-color: var(--comand-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.section-about__icon-image {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.section-about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.section-about__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--paragraph-color-font);   
+}
+
+
+@media screen and (min-width: 480px) {
+    .section-about__item {
+        width: 450px;
+    }
+
+    .section-about__icon {
+        width: 450px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-about__list {
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .section-about__item {
+        flex-basis: calc((100% - 30px*1) / 2);
+
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(3) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .section-about__icon {
+        width: 354px;
+    }
+
+    .section-about__title {
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .section-about {
+        padding-top: 94px;
+    }
+
+    .section-about__item {
+        flex-basis: calc((100% - 30px*3) / 4);
+    
+        &:not(:nth-child(4n)) {
+            margin-right: 30px;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 0;
+        }
+    
+        &:nth-child(3) {
+            padding-bottom: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .section-about__icon {
+        width: 270px;
+    }
+
+}
