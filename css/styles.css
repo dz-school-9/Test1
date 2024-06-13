@@ -1255,6 +1255,7 @@ ol {
 .team-location {
   /* display: block; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -1277,6 +1278,7 @@ ol {
   padding-bottom: 0;
   padding-left: 4px;
   max-width: 100%;
+  
   height: auto;
 }
 
