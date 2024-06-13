@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 :root {
   --primary-color-font: #212121;
   --second-color-font: #2196F3;
@@ -166,6 +166,9 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.main-h-title-uppercase {
+  text-transform: uppercase;
 }
 
 /* ===== Соц.мережі команди ===== */
@@ -1250,7 +1253,9 @@ ol {
 }
 
 .team-location {
-  display: block;
+  /* display: block; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .person-location {
@@ -1267,9 +1272,10 @@ ol {
   background-color: var(--hero-color-font);
 }
 
-.person-img {
+.education-management {
   display: block;
   padding-bottom: 0;
+  padding-left: 4px;
   max-width: 100%;
   height: auto;
 }
@@ -1302,9 +1308,10 @@ ol {
 }
 
 @media screen and (min-width: 480px) {
-  .person-img {
+  .education-management {
     width: 450px;
-    height: 460px;
+    /* height: 460px; */
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1321,9 +1328,10 @@ ol {
   .person-location:nth-child(n+1) {
     margin-bottom: 0;
   }
-  .person-img {
+  .education-management {
     width: 354px;
-    height: 374px;
+    /* height: 374px; */
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1336,9 +1344,10 @@ ol {
   .person-location:not(:nth-child(4n+1)) {
     margin-left: 30px;
   }
-  .person-img {
+  .education-management {
     width: 270px;
-    height: 260px;
+    /* height: 260px; */
+    height: auto;
   }
 }
 .main-title-client {
@@ -1563,24 +1572,6 @@ ol {
 
 
 
-
-@charset "UTF-8";
-:root {
-  --primary-color-font: #212121;
-  --second-color-font: #2196F3;
-  --color-logo: #000000;
-  --paragraph-color-font: #757575;
-  --hero-color-font: #FFFFFF;
-  --footer-color-font: rgba(255, 255, 255, 0.6);
-  --hero-footer-color: #2F303A;
-  --comand-color: #F5F4FA;
-  --border-portfolio: #EEEEEE;
-  --border-client: #AFB1B8;
-  --color-social-footer: rgba(255, 255, 255, 0.1);
-  --color-btn-form: #188CE8;
-  --primary-font: "Roboto", sans-serif;
-  --second-font: "Raleway", sans-serif;
-}
 
 .visually-hidden {
   position: absolute;
